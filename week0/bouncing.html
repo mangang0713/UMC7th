@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bouncing {
+        position: absolute;
+        background-color: red;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+        animation: 1s ease-in 0s infinite alternate forwards running bouncing;
+      }
+
+      @keyframes bouncing {
+        0% {
+          top: 0; /* 처음 위치 */
+        }
+        100% {
+          top: 600px; /* 아래로 이동 */
+          height: 230px;
+          border-radius: calc(100%);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bouncing"></div>
+  </body>
+</html>
