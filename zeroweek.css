@@ -1,0 +1,21 @@
+.border {
+  border: 3px solid blue;
+  width: 1000px;
+  height: 200px;
+  margin: 10px 0px;
+}
+
+.outline {
+  outline: 3px solid green;
+  width: 1000px;
+  height: 200px;
+  margin: 10px 0px;
+}
+
+.border-outline {
+  border: 3px solid blue;
+  outline: 3px solid green;
+  width: 1000px;
+  height: 200px;
+  margin: 10px 0px;
+}
