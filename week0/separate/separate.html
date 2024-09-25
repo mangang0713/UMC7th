@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .separate {
+        display: grid;
+        grid-template-columns: repeat(1fr, 4);
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        border: 5px solid black;
+      }
+      .grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid blue;
+        font-size: 25px;
+        font-weight: 900;
+      }
+      .header {
+        grid-column: 1/2;
+        background-color: aquamarine;
+      }
+      .menu {
+        grid-column: 2/5;
+        background-color: brown;
+      }
+      .hero {
+        grid-column: 1/5;
+        grid-row: 2/4;
+        background-color: pink;
+      }
+      .main {
+        grid-column: 1/3;
+        grid-row: 4/6;
+        background-color: yellow;
+      }
+      .image {
+        grid-column: 4/5;
+        background-color: skyblue;
+      }
+      .extra {
+        grid-column: 4/5;
+        background-color: greenyellow;
+      }
+      .banner {
+        grid-column: 1/5;
+        background-color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="separate">
+      <header class="grid header">HEADER</header>
+      <div class="grid menu">MENU</div>
+      <div class="grid hero">HERO</div>
+      <div class="grid main">MAIN</div>
+      <div class="grid image">IMAGE</div>
+      <div class="grid extra">EXTRA</div>
+      <div class="grid banner">BANNER</div>
+    </div>
+  </body>
+</html>
