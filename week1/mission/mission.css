@@ -1,0 +1,86 @@
+body {
+  background-color: deepskyblue;
+}
+
+.header {
+  margin: 80px;
+  font-size: 38px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  width: 600px;
+  height: 40px;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.input:focus {
+  border: 2px solid blue;
+  border-radius: 6px;
+}
+
+.to-do-list {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.to-do,
+.done {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  min-height: 300px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid gainsboro;
+  width: 250px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.item-text {
+  max-width: 200px;
+}
+
+.done-btn,
+.delete-btn {
+  background-color: skyblue;
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 25px;
+  font-size: 14px;
+}
+
+.done-btn:hover,
+.delete-btn:hover {
+  width: 40px;
+  height: 20px;
+  font-size: 10px;
+  margin: 2.5px 5px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid gainsboro;
+  font-size: 22px;
+  font-weight: 900;
+}
